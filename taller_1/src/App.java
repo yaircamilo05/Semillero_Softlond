@@ -8,8 +8,6 @@ public class App {
         Scanner Elector = new Scanner(System.in);
         System.out.println("Ingrese el numero de ejercicio que quiere ver: ");
         int numEjercicio = Elector.nextInt();
-        Elector.close();
-
         switch (numEjercicio) {
             case 1:
                 // Realiza un programa que solicite al usuario dos números enteros y muestre su
@@ -505,15 +503,14 @@ public class App {
                 // palabras ordenadas alfabéticamente
 
                 Scanner escaner25 = new Scanner(System.in);
-                System.out.println("Ingrese una frase: ");
+                System.out.println("Ingrese una frase:");
                 String frase3 = escaner25.nextLine();
-                escaner25.close();
                 String[] palabras2 = frase3.split(" ");
                 Arrays.sort(palabras2);
                 for (int i = 0; i < palabras2.length; i++) {
                     System.out.println(palabras2[i]);
                 }
-
+                escaner25.close();
                 break;
 
             case 28:
@@ -694,6 +691,8 @@ public class App {
                 break;
         }
 
-    }
+        Elector.close();
 
+    }
+        
 }
