@@ -26,6 +26,7 @@ public class Hotel {
         for (Habitacion habitacion : this.habitaciones) {
             if (habitacion.getNumero().equals(reserva.getHabitacion().getNumero())) {
                 habitacion.adicionarReserva(reserva);
+                reserva.getCliente().adicionarReserva(reserva);
             }
         }
     }
