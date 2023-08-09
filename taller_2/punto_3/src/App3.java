@@ -4,7 +4,7 @@ Crea una clase Calculadora que contenga métodos para realizar operaciones matem
 como suma, resta, multiplicación y división.
  */
 
-public class App {
+public class App3 {
     public static void main(String[] args) throws Exception {
         System.out.println("Sumar 1 + 2: " + Calculadora.sumar(1, 2));
         System.out.println("Restar 1 - 2: " + Calculadora.restar(1, 2));

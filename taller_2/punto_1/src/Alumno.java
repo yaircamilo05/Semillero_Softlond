@@ -44,7 +44,7 @@ public class Alumno {
     }
 
     public void añadirNota(double nota) throws Exception {
-        if (nota < 0 || nota > 10) {
+        if (nota < 0 || nota > 5) {
             throw new Exception("La nota debe estar entre 0 y 10");
         }
         notas.add(nota);

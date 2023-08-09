@@ -4,7 +4,7 @@ Crea una clase ConversorMonedas que contenga métodos para convertir una cantida
 dinero de una moneda a otra, por ejemplo, de dólares a euros o de pesos a dólares.
  */
 
-public class App {
+public class App2 {
     public static void main(String[] args) throws Exception {
 
         System.out.println("Convertir 1000 pesos a dolares: " + ConversorMonedas.convertirPesosADolares(1000));
