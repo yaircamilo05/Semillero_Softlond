@@ -41,4 +41,14 @@ public class Habitacion {
         return this.reservas;
     }
 
+    public void cancelarReserva(Reserva reserva1) {
+        for (Reserva reserva : this.reservas) {
+            if (reserva.getFechaInicio().equals(reserva1.getFechaInicio())
+                    && reserva.getFechaFin().equals(reserva1.getFechaFin())) {
+                this.reservas.remove(reserva);
+            }
+        }
+
+    }
+
 }

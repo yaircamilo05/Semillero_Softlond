@@ -61,6 +61,14 @@ public class App4 {
         hotel1.listarHabitaciones();
         hotel2.listarHabitaciones();
 
+        LocalDate fechaInicio5 = LocalDate.of(2021, 10, 1);
+        LocalDate fechaFin5 = LocalDate.of(2021, 10, 10);
+
+        hotel1.listarHabitacionesDisponibles(fechaInicio5, fechaFin5);
+
+        hotel1.cancelarReserva(reserva1);
+
+        
         System.out.println("Reservas del cliente " + cliente1.getNombreEmpresa());
 
         

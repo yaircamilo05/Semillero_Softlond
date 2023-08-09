@@ -48,5 +48,36 @@ public class Hotel {
 
     }
 
+    public void listarHabitacionesDisponibles(LocalDate fechaInicioP, LocalDate fechaFinP) {
+        for (Habitacion habitacion : habitaciones) {
+            if (habitacion.getReservas().isEmpty()) {
+                System.out.println("Habitacion " + habitacion.getNumero() + " disponible");
+            } else {
+                for (Reserva reserva : habitacion.getReservas()) {
+                    if (fechaInicioP.compareTo(reserva.getFechaInicio()) >= 0
+                            && fechaInicioP.compareTo(reserva.getFechaFin()) <= 0) {
+                        System.out.println("Habitacion " + habitacion.getNumero() + " no disponible");
+                    } else if (fechaFinP.compareTo(reserva.getFechaInicio()) >= 0
+                            && fechaFinP.compareTo(reserva.getFechaFin()) <= 0) {
+                        System.out.println("Habitacion " + habitacion.getNumero() + " no disponible");
+                    } else {
+                        System.out.println("Habitacion " + habitacion.getNumero() + " disponible");
+                    }
+                }
+            }
+            
+        }
+
+    }
+
+    public void cancelarReserva(Reserva reserva1) {
+        for (Habitacion habitacion : this.habitaciones) {
+            if (habitacion.getNumero().equals(reserva1.getHabitacion().getNumero())) {
+                habitacion.cancelarReserva(reserva1);
+            }
+        }
+
+    }
+
     
 }
