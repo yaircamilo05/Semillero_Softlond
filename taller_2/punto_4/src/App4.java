@@ -68,8 +68,9 @@ public class App4 {
 
         hotel1.cancelarReserva(reserva1);
 
-        
+
         System.out.println("Reservas del cliente " + cliente1.getNombreEmpresa());
+        cliente1.listarReservas();
 
         
 
