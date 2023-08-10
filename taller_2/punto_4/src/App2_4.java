@@ -12,7 +12,7 @@ import java.time.LocalDate;
 
 
 
-public class App4 {
+public class App2_4 {
     public static void main(String[] args) throws Exception {
         Hotel hotel1 = new Hotel("Hotel 1");
         Hotel hotel2 = new Hotel("Hotel 2");
