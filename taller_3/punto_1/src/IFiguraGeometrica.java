@@ -1,4 +1,4 @@
-public interface Ifurgas {
+public interface IFiguraGeometrica {
 
     public double calcularPerimetro();
 

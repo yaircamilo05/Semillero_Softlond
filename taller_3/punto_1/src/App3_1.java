@@ -16,6 +16,7 @@ public class App3_1 {
         arrayFiguras.add(new Cuadrado(5));
 
         for (IFiguraGeometrica figura : arrayFiguras) {
+            System.out.println("Figura: " + figura.getClass().getSimpleName());
             System.out.println("Area: " + figura.calcularArea());
             System.out.println("Perimetro: " + figura.calcularPerimetro());
         }
