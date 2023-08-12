@@ -1,4 +1,4 @@
-public class CartaTrebol implements ICarta {
+public class CartaTrebol implements ICartaPoker {
 
     private int numero;
     private Palo palo;

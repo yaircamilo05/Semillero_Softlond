@@ -1,4 +1,4 @@
-public class CartaDiamante implements ICarta {
+public class CartaDiamante implements ICartaPoker {
 
     private int numero;
     private Palo palo;
